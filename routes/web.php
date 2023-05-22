@@ -20,3 +20,11 @@ Route::get('/', function () {
     ];
     return view('home', $data);
 })->name('home');
+
+Route::get('/about', function () {
+    $data = [
+        'page_title' => 'About page',
+        'message' => 'You are now on the about page...about what?!?'
+    ];
+    return view('home', $data);
+})->name('about');
